@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>  
+    <div class="hero  bg-red-700 grid grid-cols-3 min-h-screen">
+        <ul class="md:hidden menu absolute top-0 flex w-full justify-around py-5 text-white">
+            <li><a class="hover:text-gray-300" href="#">Profile</a></li>
+            <li><a class="hover:text-gray-300" href="#">Compétences</a></li>
+            <li><a class="hover:text-gray-300" href="#">Projets</a></li>
+            <li><a class="hover:text-gray-300" href="#">Contact</a></li>
+        </ul>
+        
+        <div class="image-hero">
+            <img class="min-h-screen w-full" src="images/img.png" alt="">
+        </div>
+        <div class="content-hero col-span-2 flex flex-col justify-center items-center relative">
+            <ul class="hidden menu absolute top-0 md:flex w-full justify-around py-5 text-white">
+                <li><a class="hover:text-gray-300" href="#">Profile</a></li>
+                <li><a class="hover:text-gray-300" href="#">Compétences</a></li>
+                <li><a class="hover:text-gray-300" href="#">Projets</a></li>
+                <li><a class="hover:text-gray-300" href="#">Contact</a></li>
+            </ul>
+            <div class="name bg-white py-2 px-10 sm:px-16 md:px-24"><h3 class="text-xl text-red-700 font-semibold">Asmaâ Harbach</h3></div>
+            <h1 class="portfolio text-4xl sm:text-5xl md:text-8xl uppercase font-semibold text-white my-7">portfolio</h1>
+            <p class="specialite text-xl uppercase text-gray-300">Développeuse web</p>
+        </div>
+    </div>
+    <div class="about grid grid-cols-1 md:grid-cols-2 min-h-screen">
+        <div class="intro order-1 py-12 flex flex-col justify-center items-center bg-red-700">
+            <h1 class="text-white font-semibold uppercase text-2xl mb-3">à propos de moi</h1>
+            <hr class="w-1/5 bg-red-700 h-1.5 mb-9">
+            <p class="text-gray-300 text-justify w-3/4">Je Suis Une Developpeuse Web Passionnée Et Autodidacte, 
+                Cherchant A Démarrer Ma Carrière Dans Le Domaine De La Programmation Web. 
+                Je Possède Une Solide Base De Connaissanceq En HTML CSS ET PHP 
+                Ainsi Qu'une Comprehension Fondamentale Des Principes De Développement Web. 
+                Je Suis Motivée A Apprendre De Nouvelles Technologies 
+                Et A Developper Mes Compétences Pour Contribuer De Manière Significative A Des Projets Excitants.</p>
+        </div>
+        <div class="competences order-2 py-12 flex flex-col justify-center items-center">
+            <h1 class="uppercase text-red-700 text-2xl font-semibold mb-3">Compétences</h1>
+            <hr class="w-1/5 bg-red-700 h-1 mb-9 border-0">
+            <div class="competences-section grid grid-cols-3 gap-6 mx-4">
+                <div class="competence flex flex-col items-center">
+                    <i class='bx bxl-html5 text-4xl bg-red-700 p-2 rounded-full text-white mb-3'></i>
+                    <h3 class="mb-3 font-semibold text-red-700 text-center">HTML/CSS, JavaScript</h3>
+                    <p class="text-center text-gray-500 text-xs md:text-sm">structuration de pages web, Mise en page responsive Programmation asynchrone</p>
+                </div>
+                <div class="competence flex flex-col items-center">
+                    <i class='bx bxl-react text-4xl bg-red-700 p-2 rounded-full text-white mb-3'></i>
+                    <h3 class="mb-3 font-semibold text-red-700">React.js</h3>
+                    <p class="text-center text-gray-500 text-xs md:text-sm">Création d'applications web interactives, gestion de l'état avec Redux, Hooks, Routing.</p>
+                </div>
+                <div class="competence flex flex-col items-center">
+                    <i class='bx bxl-php text-4xl bg-red-700 p-2 rounded-full text-white mb-3'></i>
+                    <h3 class="mb-3 font-semibold text-red-700">PHP & MySQL </h3>
+                    <p class="text-center text-gray-500 text-xs md:text-sm">Développement de backends, intégration avec des bases de données MySQL, gestion des sessions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-contact grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+        <div class="projects order-4 md:order-3 py-12 lg:py-0 px-5 flex flex-col justify-center items-center">
+            <h1 class="text-2xl text-red-700 font-semibold uppercase mb-24">Projets Réalisée</h1>
+            <div class="content-projects grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="projet flex">
+                    <img src="images/prj1.jpg" class="h-full w-2/4 mr-3 mb-5 md:mb-0">
+                    <div class="info-project mr-5">
+                        <h3 class="name-project text-red-700 font-semibold">Site E-commerce</h3>
+                        <hr class="border-0 h-0.5 bg-red-700 my-5">
+                        <p class="text-red-700 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="projet flex">
+                    <img src="images/prj2.jpg" class="h-full w-2/4 mr-3 mb-5 md:mb-0">
+                    <div class="info-project mr-5">
+                        <h3 class="name-project text-red-700 font-semibold">Site E-commerce</h3>
+                        <hr class="border-0 h-0.5 bg-red-700 my-5">
+                        <p class="text-red-700 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="projet flex">
+                    <img src="images/prj2.jpg" class="h-full w-2/4 mr-3 mb-5 md:mb-0">
+                    <div class="info-project mr-5">
+                        <h3 class="name-project text-red-700 font-semibold">Site E-commerce</h3>
+                        <hr class="border-0 h-0.5 bg-red-700 my-5">
+                        <p class="text-red-700 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact order-3 md:order-4 bg-red-700 grid grid-cols-3">
+            <img src="images/img2.jpg" class="h-full">
+            <div class="form-contact col-span-2 flex flex-col justify-center m-7">
+                <h3 class="text-2xl text-white font-semibold uppercase mb-24 text-center">Contactez-Moi</h3>
+                <label class="text-white my-3">Name</label>
+                <input class="rounded-md p-2" type="text" placeholder="Name">
+                <label class="text-white my-3">Email</label>
+                <input type="email" class="rounded-md p-2"  placeholder="Email">
+                <label class="text-white my-3">Message</label>
+                <textarea rows="6" class="rounded-md p-2"  placeholder="Ecrivez votre Message"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="footer flex flex-col justify-around items-center min-h-screen">
+        <div class="icons">
+            <i class='bx bxl-linkedin-square text-3xl m-3 bg-red-700 text-white p-1'></i>
+            <i class='bx bxl-gmail text-3xl m-3 bg-red-700 text-white p-1'></i>
+            <i class='bx bxl-github text-3xl m-3 bg-red-700 text-white p-1' ></i>
+        </div>
+        <div class="copyright bg-red-700">
+            <p class="text-white p-12">Asmaâ Harbach 2024 &copy; Tous droits réservés</p>
+        </div>
+        <div class="footer-menu">
+            <ul class="text-gray-500 text-center">
+                <li><a class="" href="#">Profile</a></li>
+                <li><a class="" href="#">Compétences</a></li>
+                <li><a class="" href="#">Projets</a></li>
+                <li><a class="" href="#">Contact</a></li>
+                <li class="font-semibold">asmaharbach@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
