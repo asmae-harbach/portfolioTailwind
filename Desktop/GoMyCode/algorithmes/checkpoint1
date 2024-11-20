@@ -1,0 +1,30 @@
+var 
+p : String := 'Lorem ipsum dolor sit amet consectetur adipisicing elit .';
+n : INTEGER;
+x : INTEGER := 0;
+v : INTEGER := 0;
+
+
+BEGIN
+    // longueur de la phrase
+    n := p.lenght;
+    for i FROM 0 T0 n-1 DO
+        // nombre de mots dans la phrase
+        IF (p[i] := ' ') THEN
+            x := x + 1;
+        END_IF
+        //nombre de voyelles dans la phrase
+        SWITCH (p[i]) DO
+            CASE 'a' : v = v + 1; BREAK;
+            CASE 'o' : v = v + 1; BREAK;
+            CASE 'i' : v = v + 1; BREAK;
+            CASE 'e' : v = v + 1; BREAK;
+            CASE 'u' : v = v + 1; BREAK;
+            CASE 'y' : v = v + 1; BREAK;
+        END_SWITCH
+        
+    END_FOR
+   
+END
+
+
